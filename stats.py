@@ -8,9 +8,9 @@ def get_character_count(text):
     character_counter = {} 
     for character in lowered_text:
         if character not in character_counter:
-            character_counter[character] = 0
-        if character in character_counter:
-            character_counter[character] +=1 
+            character_counter[character] = 1
+        else:
+            character_counter[character] += 1
     return character_counter
 
 def sorted_list(character_counter):
